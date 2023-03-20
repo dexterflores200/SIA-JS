@@ -58,8 +58,8 @@ function Validate(){
     if(usernameVal === ""){
         setErrorMsg(username, 'first name cannot be blank');
     }
-    else if(usernameVal.length <=1){
-        setErrorMsg(username, 'min 2 char');
+    else if(usernameVal.length <=2){
+        setErrorMsg(username, 'min 3 char');
     }
     else{
         setSuccessMsg(username);
@@ -70,9 +70,9 @@ function Validate(){
     if(lastnameVal === ""){
         setErrorMsg(lastname, 'last name cannot be blank');
     }
-    else if(lastnameVal.length <=1){
-        setErrorMsg(lastname, 'min 2 char');
-    
+    else if(lastnameVal.length <=2){
+        setErrorMsg(lastname, 'min 3 char');
+    }
     else{
         setSuccessMsg(lastname);
     }
@@ -117,8 +117,8 @@ function Validate(){
     if(middlenameVal === ""){
         setErrorMsg(middlename, 'last name cannot be blank');
     }
-    else if(middlenameVal.length <=1){
-        setErrorMsg(middlename, 'min 2 char');
+    else if(middlenameVal.length <=2){
+        setErrorMsg(middlename, 'min 3 char');
     }
     else{
         setSuccessMsg(middlename);
